@@ -1,0 +1,44 @@
+body {
+    font-family: Arial; 
+}
+
+.centered {
+    text-align: center;
+}
+
+#table1 {
+    text-align: center;
+    margin-left:auto; 
+    margin-right:auto;
+    width:70%;
+}
+
+#thead {
+    background-color: lightskyblue;
+}
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
+
+.p1 {
+    color: darkblue;
+}
+
+#img1 {
+    width:600px;
+    height:400px;
+}
+
+#img2 {
+    width:600px;
+    height:300px;
+}
+
+#small_font {
+    font-size: 12px;
+}
+
