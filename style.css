@@ -10,15 +10,23 @@ body {
     text-align: center;
     margin-left:auto; 
     margin-right:auto;
-    width:70%;
+    width:90%;
+    border-collapse: collapse;
 }
 
 #thead {
-    background-color: lightskyblue;
+    background-color: lightblue;    
 }
+
+.trow {
+    border-bottom: solid grey thin;
+}
+
+
 .row {
   display: flex;
 }
+
 
 .column {
   flex: 50%;
@@ -27,6 +35,19 @@ body {
 .p1 {
     color: darkblue;
 }
+
+.high-level {
+    color: red;
+}
+
+.medium-level {
+    color: yellowgreen;
+}
+
+.low-level {
+    color: darkgreen;
+}
+
 
 #img1 {
     width:600px;
@@ -38,7 +59,53 @@ body {
     height:300px;
 }
 
+.shaperow {
+    display: flex;
+}
+
+.shapecolumn {
+    flex: 17%;
+}
+
+.svgrect {
+    width: 150px;
+    height: 100px;
+}
+
+.svgcir {
+    width: 150px;
+    height: 125px;
+}
+
+.rect-style {
+    width:150px; 
+    height:100px; 
+    fill: blueviolet;
+    stroke: black; 
+    stroke-width: 5;
+}
+
+.rect-style:hover {
+    fill: darkred;
+}
+
+.circ-style {
+    cx: 75px; 
+    cy: 52px; 
+    r: 50px; 
+    fill: hotpink;
+    fill-opacity: 50%;
+}
+
+.circ-style:hover {
+    stroke: black; 
+    stroke-width: 5
+}
+
+
 #small_font {
     font-size: 12px;
 }
+
+
 

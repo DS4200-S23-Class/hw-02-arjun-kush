@@ -10,7 +10,9 @@
 
 
 <body>
+
     <div id="data-abstraction"> 
+
         <div class="info">
             <h1 class="centered">Dataset Types</h1>
             <table id="table1">
@@ -19,95 +21,126 @@
                     <th>Link</th>
                     <th>Dataset Type</th>
                 </tr>
-                <tr>
+                <tr class="trow">
                     <td>UFO</td>
-                    <td>Tobias</td>
-                    <td>Linus</td>
+                    <td><a href="data/UFO.csv"> UFO.csv </a></td>
+                    <td>Table</td>
                 </tr>
-                <tr>
+                <tr class="trow">
                     <td>Airports</td>
-                    <td>14</td>
-                    <td>10</td>
+                    <td><a href="data/Airports.cvs"> Airports.csv </a></td>
+                    <td>Table</td>
                 </tr>
-                <tr>
+                <tr class="trow">
                     <td>Google-Web</td>
-                    <td>14</td>
-                    <td>10</td>
+                    <td><a href="data/Google-Web.txt"> Google-Web.txt </a></td>
+                    <td>Network</td>
                 </tr>
             </table>
-
         </div>
-
         
         <div class="info">
             <h1 class="centered">Data Types</h1>
-
             <h2>UFO</h2>
-
                 <ul>
-                    <li>Row Data Type</li>
-                    <li>Column Data Type</li>
+                    <li>Each row is an Item representing a UFO sighting</li>
+                    <li>Columns are the following attributes-</li>
                     <ul>
-                        <li>Sub of Second</li>
-                        <li>Another Sub</li>
+                        <li>Datetime - Sequential </li>
+                        <li>city - Categorical</li>
+                        <li>state - Categorical</li>
+                        <li>country - Categorical</li>
+                        <li>shape - Categorical</li>
+                        <li>duration - Quantitative and Sequential</li>
                     </ul>
                     <li>Column Data Type</li>
                 </ul>
 
             <h2>Airports</h2>
-
                 <ul>
-                    <li>Row Data Type</li>
-                    <li>Column Data Type</li>
+                    <li>Each row is an Item representing an airport and its location</li>
+                    <li>Columns are the following attributes-</li>
                     <ul>
-                        <li>Sub of Second</li>
-                        <li>Another Sub</li>
+                        <li>AIRPORT_NAME - Categorical</li>
+                        <li>LATITUDE - Position</li>
+                        <li>LONGITUDE - Position</li>
                     </ul>
                     <li>Column Data Type</li>
                 </ul>
 
             <h2>Google-Web</h2>
-
                 <ul>
-                    <li>Row Data Type</li>
-                    <li>Column Data Type</li>
-                    <ul>
-                        <li>Sub of Second</li>
-                        <li>Another Sub</li>
-                    </ul>
-                    <li>Column Data Type</li>
+                    <li>Each row is a Link between 2 nodes</li>
+                    <li>FromNodeID represents a node</li>
+                    <li>ToNodeId represents a node</li>
                 </ul>
+        </div>
+    </div>
 
+    <div id="task-abstraction">
+        <h1 class="centered">Task Abstraction</h1>
+        <div class="row">
 
-         </div>
-
-        <div>
-            <h1 class="centered">Task Abstraction</h1>
-            <div class="row">
-                <div class="column" id="p1">
-                    <img class="centered" src="img/vis1.png" alt="VAN" id="img1">
-
-                    <p>High Level</p>
-                    <p>Medium Level</p>
-                    <p>Low Level</p>
-                    <p>Target</p>
-                    
-
-                </div>
-
-                <div class="column" id="p1">
-                    <img class="centered" src="img/vis2.png" alt="SEA" id="img2">
-        
-                    <p>High Level</p>
-                    <p>Medium Level</p>
-                    <p>Low Level</p>
-                    <p>Target</p>
-
-
-                </div>
+            <div class="column p1">
+                <img class="centered" src="img/vis1.png" alt="VAN" id="img1">
+                <p class="high-level">High Level - Consume - Discover</p>
+                <p class="medium-level">Medium Level - Search - Lookup</p>
+                <p class="low-level">Low Level - Query - Identify</p>
+                <p>Target - All Data - Outliers</p> 
             </div>
 
+            <div class="column p1">
+                <img class="centered" src="img/vis2.png" alt="SEA" id="img2">
+                <p class="high-level">High Level - Consume - Present</p>
+                <p class="medium-level">Medium Level - Search - Browse</p>
+                <p class="low-level">Low Level - Query - Compare</p>
+                <p>Target - All Data - Trends</p>
+            </div>
+
+        </div>       
+    </div>
+
+    <div id="decoration">
+        <div class="shaperow">
+
+            <div class="shapecolumn">
+                <svg class="svgrect">
+                    <rect class="rect-style">
+                </svg>
+            </div>
+
+            <div class="shapecolumn">
+                <svg class="svgcir">
+                    <circle class="circ-style"/>
+                </svg>
+            </div>
+
+            <div class="shapecolumn">
+                <svg class="svgrect">
+                    <rect class="rect-style">
+                </svg>
+            </div>
+
+            <div class="shapecolumn">
+                <svg class="svgcir">
+                    <circle class="circ-style"/>
+                </svg>
+            </div>
+
+            <div class="shapecolumn">
+                <svg class="svgrect">
+                    <rect class="rect-style">
+                </svg>
+            </div>
+
+            <div class="shapecolumn">
+                <svg class="svgcir">
+                    <circle class="circ-style"/>
+                </svg>
+            </div>
         </div>
+    </div>
+
 
         <h1 class="centered">Acknowledgements</h1>
             <div id="small_font"> 
@@ -118,10 +151,8 @@
                 </ul>
 
             </div>
-
-
-
     </div>
+    
 
 
 </body>
